@@ -645,7 +645,7 @@ body {
                                     </div>
 
                                     <div class="price my-2">
-                                        $ <span id="price">' . $product[3] . '</span>
+                                        $ <span id="price">' . number_format($product[3]) . '</span>
                                     </div>
 
                                 </div>
@@ -661,7 +661,7 @@ body {
             <div class="flex justify-between my-10">
                 <h3 class="text-xl">TỔNG CỘNG</h3>
                 <div class="subtotal">
-                    <span>$ <span id="subtotal"><?= $tong; ?></span></span>
+                    <span>$ <span id="subtotal"><?= number_format($tong); ?></span></span>
                 </div>
             </div>
 

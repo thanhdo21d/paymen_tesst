@@ -120,6 +120,7 @@ if (isset($_GET['act'])) {
         $tm = 0;
         // tìm và so sánh sp trong giỏ hàng
         include "cart/viewcart.php";
+        echo "<script>window.location.href='?act=viewcart'</script>";
       }
       break;
     case 'delcart':
@@ -186,7 +187,7 @@ if (isset($_GET['act'])) {
     case 'thanhtoan_COD':
       if (isset($_SESSION['dangky'])) {
         $money = $_GET['tong'];
-        include "thanhtoan/camon.php";
+        include "./thanhtoan/camon.php";
       } else {
         echo '<h1 class=" text-center text-[32px] border border-slate-300 ...">Vui lòng đăng nhập để thanh toán</h1>';
         include "cart/viewcart.php";
