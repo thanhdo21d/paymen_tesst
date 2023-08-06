@@ -89,6 +89,7 @@ function order_detail($order){
         </div>';
                     $code_cart = $order['code_cart'];
                     $listorder_detail = loadone_order($code_cart);
+                    $tong=0;
       foreach($listorder_detail as $listorder){
           $price = $listorder['quanlity']*$listorder['product_price'];
           $tong += $price;
@@ -103,8 +104,7 @@ function order_detail($order){
               <div class="mx-10 flex justify-between items-center col-span-3">
                   <div class="">
                       <h3 class="font-semibold"> '.$listorder['product_name'].'</h3>
-                      <
-                      label class="my-10">Số Lượng : '.$listorder['quanlity'].' </><br>
+                      <label class="my-10">Số Lượng : '.$listorder['quanlity'].' </label><br>
                       <label class="my-10">Phân loại hàng : Size: '.$size.", màu: ".$color.'   </label>
                   </div>
                   <div class="">

@@ -2,6 +2,9 @@
 // Khởi tạo session bằng session_start()
 session_start();
 ob_start();
+if (!isset($_SESSION['cart'])) $_SESSION['cart'] = array();
+if(!isset($_SESSION['dangky']) && isset($_GET['act']))echo "<script>window.location.href='./index.php'</script>";// ko đăng nhập chỉ xem được trang chủ
+
 
 include "../global.php";
 include "../guest/category.php";

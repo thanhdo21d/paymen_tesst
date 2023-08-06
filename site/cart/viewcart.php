@@ -1,9 +1,5 @@
 <?php
 //  $_SESSION['cart'][0][4]=4;
-
- foreach ($_SESSION['cart'] as $product) {
-    echo $product[4]."<br>";
- }
 if (isset($_POST['up'])) {
     $quantity = array();
     $idproduct = array();
@@ -25,7 +21,7 @@ if (isset($_SESSION['cart']) && ($_SESSION['cart'] != [])) {
     
     
 ?>
-
+<!-- </div> -->
     <div class="items-center text-center text-[50px] font-bold ">
         Giỏ hàng
     </div>
