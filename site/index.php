@@ -123,6 +123,7 @@ if (isset($_GET['act'])) {
         $tm = 0;
         // tìm và so sánh sp trong giỏ hàng
         include "cart/viewcart.php";
+        
         echo "<script>window.location.href='?act=viewcart'</script>";
       }
       break;
