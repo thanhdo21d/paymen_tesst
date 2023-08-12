@@ -128,7 +128,7 @@ CREATE TABLE `order` (
   `code_cart` varchar(11) NOT NULL,
   `status` tinyint(2) NOT NULL,
   `total` int(11) DEFAULT NULL,
-  `time` datetime DEFAULT NULL,
+  `time` timestamp COLLATE utf8_bin NOT NULL DEFAULT current_timestamp(),
   `ship_address` varchar(255) DEFAULT NULL,
   `ship_name_user` varchar(255) DEFAULT NULL,
   `ship_phone_user` varchar(255) DEFAULT NULL,
